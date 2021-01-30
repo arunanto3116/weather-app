@@ -1,0 +1,1 @@
+This is a basic project created by nodejs for getting weather info
