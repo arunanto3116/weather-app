@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 const hbs = require('hbs');
 const location = require('./utils/location');
-const port = 3000;
+const port = process.env.PORT || 3000;
 const year = new Date().getFullYear();
 
 // Define path for express config

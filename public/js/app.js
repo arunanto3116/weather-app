@@ -9,7 +9,7 @@ const getWeather = e => {
     message1.classList.remove('error');
     message1.classList.remove('success');
     let location  = document.getElementById('location').value;
-    fetch(`http://localhost:3000/weather?address=${encodeURI(location)}`)
+    fetch(`/weather?address=${encodeURI(location)}`)
     .then( response => {
         response.json().then(data => {
             if (data.status === "ERROR") {
